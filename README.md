@@ -131,7 +131,7 @@ Por padrão, o servidor estará disponível em [http://localhost:8000](http://lo
 Abra o seu navegador favorito e navegue até:
 
 ```
-http://localhost:8000/game-of-life
+http://localhost:8000/
 ```
 
 > **Nota:** Certifique-se de que a rota `/game-of-life` está corretamente configurada no arquivo de rotas (`routes/web.php`). Se estiver usando uma rota diferente, ajuste conforme necessário.
