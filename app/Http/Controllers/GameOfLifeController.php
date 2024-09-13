@@ -24,23 +24,22 @@ class GameOfLifeController extends Controller
 
         // Verifica se o grid foi fornecido
         if (!$gridData) {
-            return redirect()->back()->withErrors('Grid de dados ausente.');
+            return response()->json(['error' => 'Grid de dados ausente.'], 400);
         }
 
         $grid = json_decode($gridData, true);
 
         // Verifica se o JSON foi decodificado corretamente
         if (!is_array($grid)) {
-            return redirect()->back()->withErrors('Dados de grid inválidos.');
+            return response()->json(['error' => 'Dados de grid inválidos.'], 400);
         }
 
         // Verifica as dimensões do grid
         if (count($grid) !== $gameBoard->height || count($grid[0]) !== $gameBoard->width) {
-            return redirect()->back()->withErrors('Dimensões do grid não correspondem.');
+            return response()->json(['error' => 'Dimensões do grid não correspondem.'], 400);
         }
-        $grid = json_decode($gridData, true);
 
-        // Initialize the $newGrid array
+        // Inicializa o $newGrid array
         $newGrid = array_fill(0, $gameBoard->height, array_fill(0, $gameBoard->width, 0));
 
         for ($i = 0; $i < $gameBoard->height; $i++) {
@@ -71,6 +70,11 @@ class GameOfLifeController extends Controller
 
         $gameBoard->grid = $newGrid;
         $gameBoard->save();
+
+        // Verifica se a requisição espera uma resposta JSON
+        if ($request->expectsJson()) {
+            return response()->json(['grid' => $newGrid]);
+        }
 
         return redirect()->back();
     }

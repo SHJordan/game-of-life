@@ -7,5 +7,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/game-of-life', [GameOfLifeController::class, 'index']);
+Route::get('/game-of-life', [GameOfLifeController::class, 'index'])->name('game-of-life.index');
 Route::put('/game-of-life/{gameBoard}', [GameOfLifeController::class, 'update'])->name('game-of-life.update');
