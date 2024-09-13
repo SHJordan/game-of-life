@@ -190,7 +190,14 @@ Este projeto está licenciado sob a [MIT License](LICENSE).
 <!-- Optional: Include badges for license, GitHub stars, etc. -->
 
 ![License](https://img.shields.io/github/license/SHJordan/game-of-life?style=flat-square)
+![Build Status](https://img.shields.io/github/workflow/status/SHJordan/game-of-life/CI?style=flat-square)
+![Code Coverage](https://img.shields.io/codecov/c/github/SHJordan/game-of-life?style=flat-square)
 ![PHP Version](https://img.shields.io/packagist/php-v/SHJordan/game-of-life?style=flat-square)
 ![Laravel Version](https://img.shields.io/badge/Laravel-11.x-blue?style=flat-square)
+![GitHub Stars](https://img.shields.io/github/stars/SHJordan/game-of-life?style=flat-square&label=Stars)
+![GitHub Forks](https://img.shields.io/github/forks/SHJordan/game-of-life?style=flat-square&label=Forks)
+![GitHub Issues](https://img.shields.io/github/issues/SHJordan/game-of-life?style=flat-square&label=Issues)
+![Latest Release](https://img.shields.io/github/v/release/SHJordan/game-of-life?style=flat-square)
+![Maintenance](https://img.shields.io/badge/Maintained-Yes-green.svg?style=flat-square)
 
 ---
