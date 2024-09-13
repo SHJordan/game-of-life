@@ -3,9 +3,9 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\GameOfLifeController;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
-Route::get('/game-of-life', [GameOfLifeController::class, 'index'])->name('game-of-life.index');
-Route::put('/game-of-life/{gameBoard}', [GameOfLifeController::class, 'update'])->name('game-of-life.update');
+Route::get('/', [GameOfLifeController::class, 'index'])->name('game-of-life.index');
+Route::put('/{gameBoard}', [GameOfLifeController::class, 'update'])->name('game-of-life.update');

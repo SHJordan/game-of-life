@@ -188,9 +188,9 @@ Este projeto está licenciado sob a [MIT License](LICENSE).
 ---
 
 <!-- Optional: Include badges for license, GitHub stars, etc. -->
+
 ![License](https://img.shields.io/github/license/SHJordan/game-of-life?style=flat-square)
 ![PHP Version](https://img.shields.io/packagist/php-v/SHJordan/game-of-life?style=flat-square)
-
-
+![Laravel Version](https://img.shields.io/badge/Laravel-11.x-blue?style=flat-square)
 
 ---
