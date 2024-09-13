@@ -61,8 +61,8 @@
         }
     </style>
 </head>
-<body class="flex items-center justify-center min-h-screen">
-    <div class="bg-white p-8 rounded-lg shadow-lg">
+<body class="flex items-center justify-center min-h-screen overflow-hidden">
+    <div class="bg-white p-8 rounded-lg shadow-lg max-w-fit mx-auto">
         <h1 class="text-2xl text-center mb-6">Game of Life</h1>
 
         <div id="error-messages">
@@ -77,7 +77,7 @@
             @endif
         </div>
 
-        <div class="overflow-auto max-w-full">
+        <div class="overflow-hidden">
             <table id="game-board" class="mx-auto">
                 @foreach($gameBoard->grid as $rowIndex => $row)
                     <tr>
@@ -141,7 +141,7 @@
                         const rowGrid = [];
 
                         for (let j = 0; j < rowCells.length; j++) {
-                            const cell = rowCells[j];
+                            const cell = rows[i].cells[j];
                             rowGrid.push(cell.classList.contains('alive') ? 1 : 0);
                         }
 
