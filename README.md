@@ -1,6 +1,6 @@
 # Game of Life Laravel Application
 
-![Game of Life](https://example.com/game-of-life-screenshot.png) <!-- Replace with an actual screenshot if available -->
+![Game of Life](https://github.com/user-attachments/assets/6d716df0-5cfe-4150-9277-69b607a90f7e)
 
 Bem-vindo ao **Game of Life**! Esta aplicação web implementa o famoso Jogo da Vida de Conway usando o framework Laravel, proporcionando uma interface interativa e visualmente atraente para experimentar as regras deste autômato celular.
 
@@ -33,10 +33,8 @@ Siga os passos abaixo para configurar a aplicação localmente.
 Abra o terminal e execute o seguinte comando para clonar o repositório:
 
 ```bash
-git clone https://github.com/seu-usuario/game-of-life-laravel.git
+git clone https://github.com/SHJordan/game-of-life.git
 ```
-
-Substitua `seu-usuario` pelo seu nome de usuário no GitHub e `game-of-life-laravel` pelo nome correto do repositório, se diferente.
 
 ### 2. **Navegar para o Diretório do Projeto**
 
@@ -65,8 +63,6 @@ E, em seguida, compile os assets:
 ```bash
 npm run dev
 ```
-
-> **Nota:** Se os assets já estiverem compilados e incluídos no repositório, este passo pode não ser necessário.
 
 ## ⚙️ **Configuração**
 
@@ -117,8 +113,6 @@ Execute as migrações para criar as tabelas necessárias:
 ```bash
 php artisan migrate
 ```
-
-> **Nota:** Se houver seeds disponíveis para popular o banco de dados, você pode executar `php artisan db:seed` após as migrações.
 
 ## 🏃‍♂️ **Execução**
 
@@ -176,7 +170,7 @@ Este projeto está licenciado sob a [MIT License](LICENSE).
 ---
 
 <div align="center">
-  <p>Desenvolvido com ❤️ por [Seu Nome](https://github.com/seu-usuario)</p>
+  <p>Desenvolvido com ❤️ por [SHJordan](https://github.com/SHJordan)</p>
 </div>
 
 ---
@@ -194,5 +188,9 @@ Este projeto está licenciado sob a [MIT License](LICENSE).
 ---
 
 <!-- Optional: Include badges for license, GitHub stars, etc. -->
+![License](https://img.shields.io/github/license/SHJordan/game-of-life?style=flat-square)
+![PHP Version](https://img.shields.io/packagist/php-v/SHJordan/game-of-life?style=flat-square)
+
+
 
 ---
