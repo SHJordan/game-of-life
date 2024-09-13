@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\GameBoard;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 
 class GameOfLifeController extends Controller
 {
@@ -71,11 +72,13 @@ class GameOfLifeController extends Controller
         $gameBoard->grid = $newGrid;
         $gameBoard->save();
 
+        Log::info('Request expects JSON:', ['expectsJson' => $request->expectsJson()]);
         // Verifica se a requisição espera uma resposta JSON
         if ($request->expectsJson()) {
+            Log::info('Returning JSON response');
             return response()->json(['grid' => $newGrid]);
         }
-
+        Log::info('Redirecting back');
         return redirect()->back();
     }
 }
